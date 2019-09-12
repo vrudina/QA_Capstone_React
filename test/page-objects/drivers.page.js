@@ -1,5 +1,5 @@
 module.exports = {
-
+//This contains all the elements in the DOM for Manage Drivers as well as adding the actions to those elements
 
    //Page Title
 
@@ -14,6 +14,7 @@ module.exports = {
     saveButton : '#buttonDriversSave',
     cancelButton : '#buttonDriversCancel',
     backButton : '#buttonDriversBack',
+    goButton : '.k-button',
 
 
     //Header and Fields
@@ -31,6 +32,12 @@ module.exports = {
 
     entrySelected : '.k-master-row.k-state-selected',
 
+    //Dropdowns
+
+    retiredDropdown : '.k-dropdown-wrap.k-state-default'
+
+
+
    };
    
 
@@ -45,6 +52,13 @@ module.exports = {
         .click(this.saveButton)
         .pause(500)
       };
+
+      module.exports.goButtonValidation = function(input) {
+        return input
+        .click(this.goButton)
+        .pause(500)
+      };
+
 
       module.exports.clickOk = function(input) {
         return input

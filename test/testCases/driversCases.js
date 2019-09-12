@@ -22,7 +22,7 @@ module.exports.addDrivers = async function(testCase, menuTestCase, driverTestCas
     //This test accesses the Manage Drivers screens
     it('Add a driver successfully', async function() {
 
-      await testSteps.addDriver(myApp, testCase, menuTestCase, driverTestCase);
+      await testSteps.validateDriversName(myApp, testCase, menuTestCase, driverTestCase);
       
       
       //var dialogText   = await driversPage.dialogBoxMessage(app.client);

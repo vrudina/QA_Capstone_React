@@ -28,7 +28,7 @@ module.exports.addDrivers = async function(testCase, menuTestCase, driverTestCas
       //var dialogText   = await driversPage.dialogBoxMessage(app.client);
       //var [expected,] = await testData.errorMessages(testCase);
       console.log("The test is correct returning false.");
-      expect(test).to.be.false;
+      expect(test).to.be.false; //Expected
     });
 
   });

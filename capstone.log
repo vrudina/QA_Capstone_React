@@ -1962,3 +1962,57 @@
 [2019-09-11 16:51:36.538] [info] Electron received set-screen: 
 [2019-09-11 16:52:48.352] [info] Electron received set-screen: Main
 [2019-09-11 16:52:55.508] [info] Electron received set-screen: 
+[2019-09-12 08:56:50.136] [info] Electron window created.
+[2019-09-12 08:56:51.511] [info] Configuration loaded from user data.
+[2019-09-12 08:56:51.886] [info] Electron received service url: http://remote.bayernsoftware.com:5050/Services/
+[2019-09-12 08:56:53.620] [info] BranchId sucessfully obteined.
+[2019-09-12 08:56:55.084] [info] Session from Capstone sucessfully obteined.
+[2019-09-12 08:56:55.090] [info] Electron received Capstone session.
+[2019-09-12 08:56:55.270] [info] Login user from Capstone sucessfully obteined.
+[2019-09-12 08:56:55.462] [info] Electron received set-screen: Main
+[2019-09-12 08:56:56.524] [info] Electron received set-screen: 
+[2019-09-12 08:58:25.449] [info] Electron window created.
+[2019-09-12 08:58:26.592] [info] Configuration loaded from user data.
+[2019-09-12 08:58:26.950] [info] Electron received service url: http://remote.bayernsoftware.com:5050/Services/
+[2019-09-12 08:58:29.161] [info] BranchId sucessfully obteined.
+[2019-09-12 08:58:30.633] [info] Session from Capstone sucessfully obteined.
+[2019-09-12 08:58:30.636] [info] Electron received Capstone session.
+[2019-09-12 08:58:30.832] [info] Login user from Capstone sucessfully obteined.
+[2019-09-12 08:58:31.023] [info] Electron received set-screen: Main
+[2019-09-12 08:58:31.890] [info] Electron received set-screen: 
+[2019-09-12 08:59:33.114] [info] Electron window created.
+[2019-09-12 08:59:34.304] [info] Configuration loaded from user data.
+[2019-09-12 08:59:34.594] [info] Electron received service url: http://remote.bayernsoftware.com:5050/Services/
+[2019-09-12 08:59:36.126] [info] BranchId sucessfully obteined.
+[2019-09-12 08:59:37.555] [info] Session from Capstone sucessfully obteined.
+[2019-09-12 08:59:37.558] [info] Electron received Capstone session.
+[2019-09-12 08:59:37.739] [info] Login user from Capstone sucessfully obteined.
+[2019-09-12 08:59:37.946] [info] Electron received set-screen: Main
+[2019-09-12 08:59:39.221] [info] Electron received set-screen: 
+[2019-09-12 09:00:11.716] [info] Electron window created.
+[2019-09-12 09:00:13.734] [info] Configuration loaded from user data.
+[2019-09-12 09:00:14.124] [info] Electron received service url: http://remote.bayernsoftware.com:5050/Services/
+[2019-09-12 09:00:15.381] [info] BranchId sucessfully obteined.
+[2019-09-12 09:00:16.845] [info] Session from Capstone sucessfully obteined.
+[2019-09-12 09:00:16.848] [info] Electron received Capstone session.
+[2019-09-12 09:00:17.051] [info] Login user from Capstone sucessfully obteined.
+[2019-09-12 09:00:17.266] [info] Electron received set-screen: Main
+[2019-09-12 09:00:18.580] [info] Electron received set-screen: 
+[2019-09-12 09:02:20.808] [info] Electron window created.
+[2019-09-12 09:02:21.982] [info] Configuration loaded from user data.
+[2019-09-12 09:02:22.277] [info] Electron received service url: http://remote.bayernsoftware.com:5050/Services/
+[2019-09-12 09:02:23.888] [info] BranchId sucessfully obteined.
+[2019-09-12 09:02:25.199] [info] Session from Capstone sucessfully obteined.
+[2019-09-12 09:02:25.201] [info] Electron received Capstone session.
+[2019-09-12 09:02:25.377] [info] Login user from Capstone sucessfully obteined.
+[2019-09-12 09:02:25.530] [info] Electron received set-screen: Main
+[2019-09-12 09:02:26.385] [info] Electron received set-screen: 
+[2019-09-12 09:04:10.598] [info] Electron window created.
+[2019-09-12 09:04:11.716] [info] Configuration loaded from user data.
+[2019-09-12 09:04:12.084] [info] Electron received service url: http://remote.bayernsoftware.com:5050/Services/
+[2019-09-12 09:04:14.317] [info] BranchId sucessfully obteined.
+[2019-09-12 09:04:15.681] [info] Session from Capstone sucessfully obteined.
+[2019-09-12 09:04:15.684] [info] Electron received Capstone session.
+[2019-09-12 09:04:15.862] [info] Login user from Capstone sucessfully obteined.
+[2019-09-12 09:04:16.071] [info] Electron received set-screen: Main
+[2019-09-12 09:04:16.945] [info] Electron received set-screen: 

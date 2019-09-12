@@ -22,15 +22,14 @@ module.exports.addDrivers = async function(testCase, menuTestCase, driverTestCas
     //This test accesses the Manage Drivers screens
     it('Add a driver successfully', async function() {
 
-      await testSteps.validateDriversName(myApp, testCase, menuTestCase, driverTestCase);
+      var test = await testSteps.validateLicenseDisable(myApp, testCase, menuTestCase);
       
-      
+     
       //var dialogText   = await driversPage.dialogBoxMessage(app.client);
       //var [expected,] = await testData.errorMessages(testCase);
-      //expect(dialogText).to.contain(expected.ErrorMessage);
+      console.log("The test is correct returning false.");
+      expect(test).to.be.false;
     });
-
-
 
   });
 

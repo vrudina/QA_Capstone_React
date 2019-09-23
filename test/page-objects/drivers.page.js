@@ -14,7 +14,7 @@ module.exports = {
     saveButton : '#buttonDriversSave',
     cancelButton : '#buttonDriversCancel',
     backButton : '#buttonDriversBack',
-    goButton : '.k-button',
+    goButton : '//*[@id="root"]/div/div/div/div/form/div[1]/div[1]/button',
 
 
     //Header and Fields
@@ -31,6 +31,10 @@ module.exports = {
         //Grids
 
     entrySelected : '.k-master-row.k-state-selected',
+    entrySelectedName : '.k-master-row.k-state-selected > td:nth-child(1)',
+    entrySelectedLic : '.k-master-row.k-state-selected > td:nth-child(2)',
+    entrySelectedRetired : '.k-master-row.k-state-selected > td:nth-child(2)',
+    
 
     //Dropdowns
 
@@ -40,10 +44,19 @@ module.exports = {
 
    };
    
+   //---Functions---//
+
+    //Buttons
 
       module.exports.clickAdd = function(input) {
         return input
         .click(this.addButton)
+        .pause(500)
+      };
+
+      module.exports.clickEdit = function(input) {
+        return input
+        .click(this.editButton)
         .pause(500)
       };
 
@@ -65,6 +78,9 @@ module.exports = {
         .click(this.okButton)
       };
 
+
+    //Fields
+
       module.exports.enterName = function(input, name) {
         return input
         .click(this.nameField)
@@ -78,21 +94,84 @@ module.exports = {
         .element(this.licenseField).keys(license)
       };
 
+    //Text
+
+      module.exports.dialogBoxMessage = function(input) {
+        return input
+        .element(this.dialogBox).getText();
+      };
+
+      module.exports.entrySelectedInGrid = function(input) {
+        return input
+        .element(this.entrySelected).getText().then( function(text) {
+          console.log('      Driver selected: ' + text)});
+      };
+
       module.exports.manageDriversPageLegend = function(input) {
-  return input
-  .pause(500)
-  .waitUntilTextExists(this.manageDriversLegendID, this.manageDriversLegendText)
-  .element(this.manageDriversLegendID).getText();
-};
+        return input
+        .pause(500)
+        .waitUntilTextExists(this.manageDriversLegendID, this.manageDriversLegendText)
+        .element(this.manageDriversLegendID).getText();
+      };
 
+    //Field Validations
 
-module.exports.dialogBoxMessage = function(input) {
-  return input
-  .element(this.dialogBox).getText();
-};
+    module.exports.licenseFieldColor = function(input) {
+      return input
+      .click(this.licenseField)
+      .element(this.licenseField).getCSSProperty('color').then( function(colorField) {
+        console.log('      Color of field ' + colorField)});
+    };
 
-module.exports.entrySelectedInGrid = function(input) {
-  return input
-  .element(this.entrySelected).getText().then( function(text) {
-    console.log('      Driver selected: ' + text)});
-};
+    
+    //Grid
+
+    module.exports.entrySelectedInGrid = function(input) {
+      return input
+      .element(this.entrySelected).getText().then( function(text) {
+        console.log('      Driver selected: ' + text)});
+    };
+    
+    module.exports.highlightedRowInGrid = function(input) {
+      input
+      .element(this.entrySelected)
+      .element(this.entrySelected[0]).getText().then( function(text) {
+        console.log('      Driver highlighted: ' + text)
+      })
+      return input
+      .element(this.entrySelected)
+      .element(this.entrySelected[0]).getText();
+    };
+    
+    module.exports.highlightedNameInGrid = function(input) {
+      input
+      // .element(this.entrySelectedName)
+      .element(this.entrySelectedName).getText().then( function(text) {
+        console.log('      Driver name highlighted: ' + text)
+      });
+      return input
+      // .element(this.entrySelectedName)
+      .element(this.entrySelectedName).getText();
+    };
+    
+    module.exports.highlightedLicInGrid = function(input) {
+      input
+      // .element(this.entrySelectedLic)
+      .element(this.entrySelectedLic).getText().then( function(text) {
+        console.log('      Driver license highlighted: ' + text)
+      });
+      return input
+      // .element(this.entrySelectedLic)
+      .element(this.entrySelectedLic).getText();
+    };
+    
+    module.exports.highlightedRetiredInGrid = function(input) {
+      input
+      // .element(this.entrySelectedRetired)
+      .element(this.entrySelectedRetired).getText().then( function(text) {
+        console.log('      Driver retired state highlighted: ' + text)
+      });
+      return input
+      // .element(this.entrySelectedRetired)
+      .element(this.entrySelectedRetired).getText();
+    };

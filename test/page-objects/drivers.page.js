@@ -23,6 +23,7 @@ module.exports = {
     nameField : '#inputDriversName',
     licenseField : '#inputDriversLicenseNumber',
 
+    
     //Dialog boxes
 
     dialogBox : '//*[@id="root"]/div/div/div/div[2]/div[2]/div[2]/p',
@@ -33,7 +34,7 @@ module.exports = {
     entrySelected : '.k-master-row.k-state-selected',
     entrySelectedName : '.k-master-row.k-state-selected > td:nth-child(1)',
     entrySelectedLic : '.k-master-row.k-state-selected > td:nth-child(2)',
-    entrySelectedRetired : '.k-master-row.k-state-selected > td:nth-child(2)',
+    entrySelectedRetired : '.k-master-row.k-state-selected > td:nth-child(3)',
     
 
     //Dropdowns
@@ -134,7 +135,6 @@ module.exports = {
     
     module.exports.highlightedRowInGrid = function(input) {
       input
-      .element(this.entrySelected)
       .element(this.entrySelected[0]).getText().then( function(text) {
         console.log('      Driver highlighted: ' + text)
       })
